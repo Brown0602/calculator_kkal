@@ -1,0 +1,25 @@
+.form1{
+background: white;
+border-color: black;
+border-style: solid;
+margin-right: 500px;
+margin-left: 500px;
+border-radius: 15px;
+}
+
+.inputAge{
+padding-left: 25px;
+margin-top: 25px;
+margin-right: 25px:
+
+}
+
+.cof{
+margin-top: 5px;
+margin-bottom: 25px;
+}
+
+.button{
+background: #ccc;
+}
+
