@@ -19,7 +19,7 @@ public class CountingController {
     }
 
     @RequestMapping(value = "counting_kkal/result", method = RequestMethod.POST)
-    public String counting_kkal_result(@RequestParam int age, @RequestParam int weight, @RequestParam int height, Model model) {
+    public String counting_kkal_result(@RequestParam int age, @RequestParam int weight, @RequestParam int height, @RequestParam String pol, Model model) {
         MaintenanceManAndWomen maintenanceManAndWomen = new MaintenanceManAndWomen(age, weight, height);
         MaintenanceManAndWomenActivity maintenanceManAndWomenActivity = new MaintenanceManAndWomenActivity(age, weight, height);
         SetMan setMan = new SetMan(age, weight, height);
