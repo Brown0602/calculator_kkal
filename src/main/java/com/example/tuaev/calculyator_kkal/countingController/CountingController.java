@@ -15,7 +15,7 @@ public class CountingController {
 
     @RequestMapping(value = "/counting_kkal", method = RequestMethod.GET)
     public String counting_kkal(Model model) {
-        return "testttttttttttttt";
+        return "home";
     }
 
     @RequestMapping(value = "counting_kkal/result", method = RequestMethod.POST)
