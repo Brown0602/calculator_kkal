@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class CalculatorKkalApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(CalculatorKkalApplication.class-class, args);
+		SpringApplication.run(CalculatorKkalApplication.class, args);
 
 	}
 }
