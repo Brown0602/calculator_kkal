@@ -45,8 +45,12 @@ public class DialMan {
 
     public List<Integer> dialMan(int age, int weight, int height){
 
+        int maintenanceMan = MaintenanceMan.maintenanceMan(age, weight, height);
+        maintenanceMan *= 0.9;
+
         double fixed = 6.25;
         List<Integer> resultRatio = new ArrayList();
+        resultRatio.add(0, maintenanceMan);
         double[] ratio = {1.2, 1.375, 1.55, 1.725, 1.9};
 
         double resultDouble = (10 * weight) + (fixed * height) - (5 * age) + 5;

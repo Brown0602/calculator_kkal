@@ -42,14 +42,16 @@ public class MaintenanceManActivity {
         this.height = height;
     }
 
-    public List<Integer> maintenanceMan(int age, int weight, int height){
-
+    public static List<Integer> maintenanceManActivity(int age, int weight, int height){
+        int maintenanceResultMan = MaintenanceMan.maintenanceMan(age, weight, height);
         double fixed = 6.25;
         double resultDouble = (10 * weight) + (fixed * height) - (5 * age) + 5;
         int resultInt = (int) resultDouble;
         int initial = resultInt;
         double[] ratio = {1.2, 1.375, 1.55, 1.725, 1.9};
         List<Integer> resultRatio = new ArrayList();
+
+        resultRatio.add(0, maintenanceResultMan);
 
         for (int countOne = 0; countOne < ratio.length; countOne++){
             resultInt *= ratio[countOne];
