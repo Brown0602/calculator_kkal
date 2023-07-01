@@ -24,6 +24,9 @@ public class CountingController {
 
         if (floor.equals("man")){
             int maintenanceResultMan = MaintenanceMan.maintenanceMan(age, weight, height);
+
+
+
             model.addAttribute("maintenanceResultMan", maintenanceResultMan);
             model.addAttribute("floor", floor);
         }else {
@@ -31,7 +34,7 @@ public class CountingController {
             model.addAttribute("maintenanceResultWomen", maintenanceResultWomen);
             model.addAttribute("floor", floor);
         }
-        return "Test2";
+        return "result";
     }
 
 }

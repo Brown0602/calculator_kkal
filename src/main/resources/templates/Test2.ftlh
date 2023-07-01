@@ -5,7 +5,10 @@
     <title>Тест</title>
 </head>
 <body>
-<h1>${maintenanceResultWomen}</h1>
-<h1>${floor}</h1>
+<#if floor == "man">
+    <h1>${maintenanceResultMan}</h1>
+<#else>
+    <h1>${maintenanceResultWomen}</h1>
+</#if>
 </body>
 </html>
