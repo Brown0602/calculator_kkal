@@ -43,7 +43,7 @@ public class DialMan {
         this.height = height;
     }
 
-    public List<Integer> dialMan(int age, int weight, int height){
+    public static List<Integer> dialMan(int age, int weight, int height){
 
         int maintenanceMan = MaintenanceMan.maintenanceMan(age, weight, height);
         maintenanceMan *= 0.9;
